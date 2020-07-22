@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'strainer'
+
+test = strainer::Test.new
+test.say_hello
