@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/Sinrock/strainer.git"
   spec.metadata["changelog_uri"] = "https://github.com/Sinrock/strainer.git"
 
-  # Specify which files should be added to the gem when it is released.
+  # Specify which files should be added to the gem when it is released. test add
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
