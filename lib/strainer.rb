@@ -7,4 +7,6 @@ module Strainer
       puts "Hello World!"
     end
   end
+  working = Test.new
+  puts working
 end
