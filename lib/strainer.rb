@@ -1,4 +1,7 @@
 require "strainer/version"
+require 'net/http'
+require 'open-uri'
+require 'json'
 
 module Strainer
   class Error < StandardError; 
