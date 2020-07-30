@@ -95,6 +95,7 @@ if user_choice == 'Name'
     choice = gets.chomp
     name = Name.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/name/#{choice}")
     puts name.parse_json
+    puts thanks
 
 elsif user_choice == 'Effect' #I want to get this list pulled in from the API, not hardcoded in
     puts "Choices are: Relaxed, Dizzy, Hungry, Euphoric, Happy, Depression, Insomnia, Pain, Stress, Cramps, Creative, Energetic, Talkative, Lack of Appetite, Nausea, Dry Mouth, Headache, Uplifted, Tingly, Paranoid, Sleepy, Fatigue, Headaches, Dry Eyes, Focused, Eye PRessure, Anxious, Giggly, Aroused, Inflammation, Spasticity, Seizures, Muscle Spasms."
