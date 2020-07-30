@@ -126,7 +126,9 @@ if all_selection == 'Yes'
     puts put_it_all.parse_json
     puts thanks
 
-else puts "Good call! ;)"
+else 
+    puts "Good call! ;)"
+    puts thanks
 
 end
 end
