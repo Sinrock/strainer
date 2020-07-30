@@ -118,7 +118,7 @@ elsif user_choice == 'Race' #I'm okay with this list being hardcoded however. :)
     puts race.parse_json
     puts thanks
 
-elsif user_choice == 'ALL' #The developer of The Strain API DOES indeed recommend NOT running this  too much as its very resource intensive. 
+elsif user_choice == 'ALL' #The developer of The Strain API DOES NOT recommend running this too much as its very resource intensive. 
     prompt = TTY::Prompt.new
     all_selection = prompt.select("This is a HUGE list, are you sure?", %w(Yes No))
 if all_selection == 'Yes'
