@@ -1,13 +1,11 @@
-require_relative 'lib/strainer/version'
-
 Gem::Specification.new do |spec|
   spec.name          = "strainer"
-  spec.version       = Strainer::VERSION
+  spec.version       = Strainer::VERSION "1.0"
   spec.authors       = ["Michael Ruhaak"]
   spec.email         = ["mruhaak@gmail.com"]
 
-  spec.summary       = "Will retrieve marijuana strain information."
-  spec.description   = "Will allow a user to retrieve strain specific information such as flavor, name and effects etc."
+  spec.summary       = "Will access The Strain API to return information based on any of 4 criteria, or it can list all known strains and their attributes."
+  spec.description   = "Will allow a user to retrieve strain specific information such as Name, Race, Effects & Flavor."
   spec.homepage      = "https://github.com/Sinrock/strainer.git"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
@@ -16,10 +14,8 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Sinrock/strainer.git"
-  spec.metadata["changelog_uri"] = "https://github.com/Sinrock/strainer.git"
+  spec.metadata["changelog_uri"] = "https://github.com/Sinrock/strainer/blob/master/CHANGELOG.md"
 
-  # Specify which files should be added to the gem when it is released. test add
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end

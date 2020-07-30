@@ -1,9 +1,3 @@
-# Strainer
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/strainer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +16,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This will help any medical marijuana or recreational users in finding specific information about all the variets of marijuana strains that exist in The Strain API.  You can search by strain name, flavor, effect, race (indica, sativa, hybid) or you can list all of them.  Though, this last option is not recommended by The Strain API developer as it takes a lot of resources to run. 
 
 ## Development
 
@@ -32,7 +26,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/strainer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[Sinrock]/strainer.
 
 
 ## License
