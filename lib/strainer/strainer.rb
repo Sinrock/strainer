@@ -118,7 +118,9 @@ elsif user_choice == 'ALL'
 if all_selection == 'Yes'
     put_it_all = All.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/all")
     puts put_it_all.parse_json
+
 else puts "Good call! ;)"
+  
 end
 end
 end
