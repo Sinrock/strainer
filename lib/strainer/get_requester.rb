@@ -1,24 +1,25 @@
-require 'open-uri'
-require 'net/http'
-require 'json'
+#This was the backbone of my project.  Thank you Flatiron School!  ;)
 
-class GetRequester
-    def initialize(url)
-        @url = url
-    end
+#require 'open-uri'
+#require 'net/http'
+#require 'json'
 
-    def get_response_body
-        uri = URI.parse(@url)
-        response = Net::HTTP.get_response(uri)
-        response.body
-    end
+#class GetRequester
+#    def initialize(url)
+#        @url = url
+#    end
 
-    def parse_json
-        JSON.parse(get_response_body)
-    end
-end
+   # def get_response_body
+   #     uri = URI.parse(@url)
+   #     response = Net::HTTP.get_response(uri)
+   #     response.body
+   # end
 
-get_requester = GetRequester.new('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
-get_requester.parse_json
-puts get_requester.parse_json
+    #def parse_json
+   #     JSON.parse(get_response_body)
+   # end
+#end
 
+#get_requester = GetRequester.new('https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json')
+#get_requester.parse_json
+#puts get_requester.parse_json
