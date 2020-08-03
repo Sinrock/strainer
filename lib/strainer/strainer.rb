@@ -17,7 +17,7 @@ if first_choice == "ALL"
 else
 
 prompt_two = TTY::Prompt.new 
-second_choice = prompt_two.ask("Which #{first_choice} would you like to search for?" )
+second_choice = prompt_two.ask("Which #{first_choice} would you like to search for? If nothing is returned, your search term isn't one thats accepted.")
 
 selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{first_choice}/#{second_choice}")
 
