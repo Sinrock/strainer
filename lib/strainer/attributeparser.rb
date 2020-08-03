@@ -1,4 +1,3 @@
-#This is a file that I used for testing my code before adding it to my main strainer.rb file so I wouldn't break the parts that I had working while I developed the rest of my code. 
 require 'open-uri'
 require 'net/http'
 require 'json'
