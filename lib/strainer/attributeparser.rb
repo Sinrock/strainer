@@ -1,8 +1,3 @@
-require 'open-uri'
-require 'net/http'
-require 'json'
-require 'tty-prompt'
-
 class AttributeParser
     def initialize(url)
         @url = url

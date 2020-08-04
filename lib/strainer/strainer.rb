@@ -1,5 +1,4 @@
-require 'json'
-require 'tty-prompt'
+require_relative './environment.rb'
 require_relative './attributeparser.rb'
 
 module Strainer
@@ -17,7 +16,10 @@ else
 prompt_two = TTY::Prompt.new 
 second_choice = prompt_two.ask("Which #{first_choice} would you like to search for? If nothing is returned, your search term isn't one thats accepted.")
 
-selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{first_choice}/#{second_choice}")
+encoded_first_choice = URI::encode("#{first_choice}")
+encoded_second_choice = URI::encode("#{second_choice}")
+
+selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{encoded_first_choice}/#{encoded_second_choice}")
 
 puts selection.parse_json
 end
