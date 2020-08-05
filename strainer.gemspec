@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://github.com/Sinrock"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/Sinrock/strainer.git"
+  spec.metadata["source_code_uri"] = "https://github.com/Sinrock"
   spec.metadata["changelog_uri"] = "https://github.com/Sinrock/strainer/blob/master/CHANGELOG.md"
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
