@@ -16,10 +16,9 @@ else
 prompt_two = TTY::Prompt.new 
 second_choice = prompt_two.ask("Which #{first_choice} would you like to search for? If nothing is returned, your search term isn't one thats accepted.")
 
-encoded_first_choice = URI::encode("#{first_choice}")
-encoded_second_choice = URI::encode("#{second_choice}")
+encoded_second_choice = URI::encode("#{second_choice}") #changes spaces in the user's input into 8 bit, or %20 in the URL
 
-selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{encoded_first_choice}/#{encoded_second_choice}")
+selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{first_choice}/#{encoded_second_choice}")
 
 puts selection.parse_json
 end
