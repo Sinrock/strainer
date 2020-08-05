@@ -3,7 +3,9 @@ require_relative './attributeparser.rb'
 
 module Strainer
   class Error < StandardError; end
+
 puts "Choosing ALL returns a LOT of data, be ready for it!"
+
 prompt = TTY::Prompt.new 
 first_choice = prompt.select("By what strain attribute would you like to search?", %w(Name Race Effect Flavor ALL))
 
