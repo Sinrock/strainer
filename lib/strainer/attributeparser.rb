@@ -1,3 +1,5 @@
+require_relative './environment.rb'
+
 class AttributeParser
     def initialize(url)
         @url = url
