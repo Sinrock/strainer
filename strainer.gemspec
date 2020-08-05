@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
-  spec.name          = "strainer"
-  spec.version       = Strainer::VERSION "1.0"
+  spec.name          = "Strainer"
+  spec.version       = "1.0"
   spec.authors       = ["Michael Ruhaak"]
   spec.email         = ["mruhaak@gmail.com"]
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = "test"
+  spec.bindir        = 'bin'
+  spec.executables   = 'Strainer'
   spec.require_paths = ["lib"]
 end
