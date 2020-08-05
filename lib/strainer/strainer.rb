@@ -22,6 +22,10 @@ encoded_second_choice = URI::encode("#{second_choice}") #changes spaces in the u
 
 selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/search/#{first_choice}/#{encoded_second_choice}")
 
-puts selection.parse_json
+results = selection.parse_json
+
+#puts results.map {|x| x.values}.uniq
+puts results
 end
 end
+#id, name, race, desc, effect, flavor
