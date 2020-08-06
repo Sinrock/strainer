@@ -25,7 +25,7 @@ selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/
 results = selection.parse_json
 
 #puts results.map {|x| x.values}.uniq
+
 puts results
 end
 end
-#id, name, race, desc, effect, flavor
