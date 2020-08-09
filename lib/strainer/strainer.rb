@@ -25,5 +25,6 @@ selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/
 results = selection.parse_json
 
 puts Hirb::Helpers::AutoTable.render(results, fields: %w|id name race desc flavor effect|).light_blue
+
 end
 end
