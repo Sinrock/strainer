@@ -1,5 +1,4 @@
 require_relative './environment.rb'
-require_relative './attributeparser.rb'
 
 module Strainer
   class Error < StandardError; end
