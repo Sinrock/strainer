@@ -1,6 +1,0 @@
-require 'open-uri'
-require 'net/http'
-require 'json'
-require 'tty-prompt'
-require 'uri-handler'
-require 'hirb'

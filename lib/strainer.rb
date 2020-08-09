@@ -4,10 +4,10 @@ require_relative './attributeparser.rb'
 module Strainer
   class Error < StandardError; end
 
-puts "Choosing ALL returns a LOT of data in a hash (pun intended), be ready for it!"
+puts "Choosing ALL returns a LOT of data in a hash (pun intended), be ready for it!".red
 
 prompt = TTY::Prompt.new 
-first_choice = prompt.select("By what strain attribute would you like to search?", %w(Name Race Effect Flavor ALL))
+first_choice = prompt.select("By what strain attribute would you like to search?".blue, %w(Name Race Effect Flavor ALL))
 
 if first_choice == "ALL"
     then
@@ -16,7 +16,7 @@ if first_choice == "ALL"
 else
 
 prompt_two = TTY::Prompt.new 
-second_choice = prompt_two.ask("Which #{first_choice} would you like to search for? If nothing is returned, your search term isn't one thats accepted.")
+second_choice = prompt_two.ask("Which #{first_choice} would you like to search for? If nothing is returned, your search term isn't one thats accepted.".yellow)
 
 encoded_second_choice = URI::encode("#{second_choice}") #changes spaces in the user's input into 8 bit, or %20 in the URL
 
@@ -24,7 +24,6 @@ selection = AttributeParser.new("http://strainapi.evanbusse.com/rvxnT8j/strains/
 
 results = selection.parse_json
 
-puts Hirb::Helpers::AutoTable.render(results, fields: %w|id name race desc flavor effect|)
-
+puts Hirb::Helpers::AutoTable.render(results, fields: %w|id name race desc flavor effect|).light_blue
 end
 end
