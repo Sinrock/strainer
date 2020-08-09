@@ -3,7 +3,6 @@ require_relative './attributeparser.rb'
 
 module Strainer
   class Error < StandardError; end
-
 puts "Choosing ALL returns a LOT of data in a hash (pun intended), be ready for it!".red
 
 prompt = TTY::Prompt.new 
